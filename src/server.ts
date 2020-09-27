@@ -6,6 +6,6 @@ createConnection().then(() => {
   const app = require("./app");
 
   // start express server
-  const port = 3000;
+  const port = process.env.API_PORT;
   app.listen(port, () => console.log(`App start in localhost:${port} !`));
 });
